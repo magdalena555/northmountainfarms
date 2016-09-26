@@ -1,0 +1,85 @@
+
+.body-wrapper{
+	max-width: 1400px;
+	margin:0 auto;
+	display: block;
+}
+
+h1, h2, h3{
+	font-family: 'Marck Script', cursive;
+	color:  #443a38;
+}
+
+
+p{
+	font-family: 'Merriweather', serif;
+	color:  #443a38;
+}
+.button {
+    margin:0 auto;
+    display: block;
+    border-radius: initial;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    background-color:  #62a945;
+    width: 183px;
+    height: 46px;
+    line-height: 280%;
+    font-family: BrandonGrotesque;
+    color:  #ffffff;
+    font-size: 13.84px;
+}
+.button:hover{
+    background: #3c4a54;
+    color:#fff;
+}
+@media all and (max-width: 1500px) { 
+
+}
+@media (max-width: 1390px){
+  
+}
+@media (max-width: 1350px){
+
+}
+@media (max-width: 1300px){
+
+
+}
+
+
+
+@media all and (max-width: 1200px) { 
+
+
+}
+@media all and (max-width: 1100px) { 
+    
+}
+@media all and (max-width: 1024px) { 
+    
+
+}
+@media all and (max-width: 940px) { 
+
+
+}
+
+@media all and (max-width: 768px) {
+
+
+}
+
+@media all and (max-width: 690px) {
+    
+}
+
+@media all and (max-width: 480px) {
+
+
+}
+
+@media all and (max-width: 320px) {
+
+}

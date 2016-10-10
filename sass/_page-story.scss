@@ -1,0 +1,247 @@
+.hero-small{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:400px;
+	position:relative;
+	.hero-content{
+		position:relative;
+		z-index: 999;
+		position: relative;
+	    top: 50%;
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+		h1{
+			color:  #ffffff;
+			font-size: 86.35px;
+			font-weight: 400;
+			text-align: center;
+			margin:0 ;
+		}
+		h2{
+			font-family: 'Cabin', sans-serif;
+			color:  #ffffff;
+			font-size: 50.37px;
+			font-weight: 500;
+			text-align: center;
+			margin:0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+.story-content{
+	padding:5%;
+	h1{
+		font-family: 'Cabin', sans-serif;
+		color:  #443a38;
+		font-size: 32.97px;
+		font-weight: 700;
+		line-height: 55.954px;
+		text-align: center;
+	}
+
+	p{
+		font-family: 'Merriweather', serif;
+		color:  #443a38;
+		font-size: 17.99px;
+		font-weight: 400;
+		line-height: 34.971px;
+		text-align: center;
+		padding: 0px 6%;
+	}
+	
+}
+.cheesemaker{
+	padding:5%;
+	background: #faf3e6;
+	display: flex;
+	.cheesemaker-content-container{
+		width:50%;
+		.cheesemaker-left{
+		    background: #fff;
+		    padding: 5%;
+		    height: 600px;
+		    margin-right: 5%;
+		    border: 1px solid #443a38;
+		    h2{
+		    	color:  #443a38;
+		    	font-size: 44.96px;
+		    	font-weight: 400;
+		    	margin:0;
+		    }
+		    h3{
+		    	font-family: 'Cabin', sans-serif;
+		    	color:  #443a38;
+		    	font-size: 32.97px;
+		    	font-weight: 700;
+		    	margin:0;
+		    	margin: 0 0 5%;
+		    	text-transform: uppercase;
+		    }
+		    .cheesemaker-content{
+		    	p{
+		    		font-family: 'Merriweather', serif;
+		    		font-size: 17.99px;
+		    		line-height: 34.971px;
+		    	}
+		    }
+		}
+		
+	}
+	.cheesemaker-images{
+		width:50%;
+		display: flex;
+		flex-direction:row;	
+		flex-wrap:wrap;	
+	}
+}
+
+.large-image{
+	height: 300px;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.small-image{
+	height: 300px;
+	width:50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}	
+.farmer{
+	padding:5%;
+	h2{
+		color:  #443a38;
+		font-size: 44.96px;
+		font-weight: 400;
+		margin:0;
+		text-align: center;
+	}
+	h3{
+		font-family: 'Cabin', sans-serif;
+		color:  #443a38;
+		font-size: 32.97px;
+		font-weight: 700;
+		margin:0;
+		margin-bottom:10%;
+		text-transform: uppercase;
+		text-align: center;
+		margin:0;
+		padding-bottom:3%;
+	}
+	.farmer-content{
+		font-family: 'Merriweather', serif;
+		font-size: 17.99px;
+		line-height: 34.971px;
+		text-align: center;
+		padding: 0 6%;
+	}
+}
+@media all and (max-width: 1500px) { 
+
+}
+@media (max-width: 1390px){
+  
+}
+@media (max-width: 1350px){
+
+}
+@media (max-width: 1300px){
+
+
+}
+
+
+
+@media all and (max-width: 1200px) { 
+
+
+}
+@media all and (max-width: 1100px) { 
+	
+}
+@media all and (max-width: 1024px) { 
+	.hero-small {
+	    height: 300px;
+	}
+	.page-template-page-story{
+		.hero-small .hero-content h2 {
+		    font-size: 30px;
+		}
+		.hero-small .hero-content h1 {
+		    font-size: 40px;
+		}
+	}
+	.cheesemaker {
+	    flex-direction: column;
+	}
+	.cheesemaker .cheesemaker-content-container {
+	    width: 100%;
+	}
+	.cheesemaker .cheesemaker-content-container .cheesemaker-left {
+	    margin-right: 0;
+	}
+	.story-content h1 {
+	    font-size: 30px;
+	}
+	.cheesemaker .cheesemaker-content-container .cheesemaker-left h2 {
+	    font-size: 30px;
+	}
+	.cheesemaker .cheesemaker-content-container .cheesemaker-left h3 {
+	    font-size: 30px;
+	    margin: 0 0 3%;
+	}
+	.cheesemaker .cheesemaker-content-container .cheesemaker-left {
+	    height: auto;
+	}
+	.cheesemaker .cheesemaker-images {
+	    width: 100%;
+	    margin-top: 5%;
+	}
+	.large-image, .small-image {
+	    height: 200px;
+	}
+	.story-content p {
+		padding:0;
+	}
+
+	.farmer h2 {
+	    font-size: 30px;
+	}
+	.farmer h3 {
+	    font-size: 30px;
+	}
+	.farmer .farmer-content {
+
+	    padding: 0;
+	}
+}
+@media all and (max-width: 940px) { 
+
+
+}
+
+@media all and (max-width: 768px) {
+
+
+}
+
+@media all and (max-width: 690px) {
+	
+}
+
+@media all and (max-width: 480px) {
+
+
+}
+
+@media all and (max-width: 320px) {
+
+}

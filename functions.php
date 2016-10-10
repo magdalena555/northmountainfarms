@@ -16,6 +16,8 @@ function theme_setup() {
 	add_image_size('hero', 2700, 1783, true);
 	add_image_size('logo', 400, 400, false);
 	add_image_size('product', 590, 330, true);
+	add_image_size('gallery-large', 484, 450, true);
+	add_image_size('gallery-small', 398, 225, true);
 
 
 	// Add default posts and comments RSS feed links to head
@@ -25,7 +27,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'mobile' => 'mobile'
 	) );
 
 	/*
@@ -73,6 +76,11 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+	// vide video 
+	wp_enqueue_script( 'vide-js-js', get_template_directory_uri() . "/js/jquery.vide.min.js", array( 'jquery' ), '1.5.9', true );
+
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
@@ -134,7 +142,7 @@ function hackeryou_continue_reading_link() {
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link().
  */
 function hackeryou_auto_excerpt_more( $more ) {
-	return ' &hellip;' . hackeryou_continue_reading_link();
+	return ' &hellip;';
 }
 add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
 
@@ -143,7 +151,7 @@ add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
  */
 function hackeryou_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
-		$output .= hackeryou_continue_reading_link();
+		$output .= '';
 	}
 	return $output;
 }
@@ -293,5 +301,21 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
 	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'BlogHero',
+		'parent_slug'	=> 'theme-general-settings',
+	));
 	
 }
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

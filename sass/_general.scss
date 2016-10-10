@@ -5,10 +5,16 @@
 	display: block;
 }
 
-h1, h2, h3{
+h1, h2{
 	font-family: 'Marck Script', cursive;
 	color:  #443a38;
 }
+
+h3{
+    font-family: 'Cabin', sans-serif;
+    color:#443a38;
+}
+
 
 
 p{
@@ -26,13 +32,44 @@ p{
     width: 183px;
     height: 46px;
     line-height: 280%;
-    font-family: BrandonGrotesque;
+    font-family: 'Cabin', sans-serif;
     color:  #ffffff;
     font-size: 13.84px;
 }
 .button:hover{
-    background: #3c4a54;
     color:#fff;
+}
+.top{
+    margin-top:100px;
+}
+.button{
+    line-height: 310%;
+
+}
+.button-wrapper{
+    margin:0 auto;
+    display: block;
+    border-radius: initial;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    background-color:  transparent;
+    line-height: 280%;
+    border:1px solid #62a945;
+    width: 197px;
+    height: 60px;
+    padding-top: 6px;
+}
+.button:hover{
+    opacity: .7;
+}
+hr{
+    display: block;
+    border: 1px solid #fff;
+    width: 100%;
+    z-index: 1111;
+    position:relative;
+    top: 5px;
 }
 @media all and (max-width: 1500px) { 
 
@@ -58,7 +95,7 @@ p{
     
 }
 @media all and (max-width: 1024px) { 
-    
+  
 
 }
 @media all and (max-width: 940px) { 

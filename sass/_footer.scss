@@ -4,7 +4,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding:5%;
+
 	img{
 		display: block;
 		margin:0 auto;
@@ -12,7 +12,7 @@
 	}
 	.footer-content{
 		text-align: center;
-		margin-top:30px;
+		position:relative;
 		img{
 			margin:0 auto;
 		    display: inline-block;
@@ -25,6 +25,13 @@
 			line-height: 31px;
 		}
 	}
+}
+.footer-wrapper{
+	position:relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 @media all and (max-width: 1500px) { 
 

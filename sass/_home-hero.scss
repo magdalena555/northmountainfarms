@@ -1,38 +1,56 @@
+
 .hero-container{
-	img{
+	position:relative;
+	.image-wrapper{
+		width:25%;
+		height: 100%;
 		margin:0 auto;
-		display: block;
-		z-index: 999;
-		position: relative;
-		position:relative;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
+		.center-logo{
+			margin:0 auto;
+			display: block;
+
+		}
 	}
 }
 
 .overlay{
 	background:rgba(97,81,78,0.6);
+	background: url("images/dotted-overlay.png");
+	opacity:.7;
 	position:absolute;
 	top:0;
 	bottom:0;
 	right: 0;
 	left:0;
 }
-.hero-desktop{
-	display: none;
+
+
+.hero-container{
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 800px;
+    background-size: cover;
+    position: relative;
 }
-.hero-mobile{
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width:100%;
-	height:730px;
+.hero-arrow{
 	position:relative;
+	padding-top:25px;
+	margin:0 auto;
+	display: block;
+}
+.hero-center{
+	position:relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 999;
 }
 @media all and (max-width: 1500px) { 
-
+	.hero-container {
+	    height: 600px;
+	}
 }
 @media (max-width: 1390px){
   
@@ -55,12 +73,20 @@
 	
 }
 @media all and (max-width: 1024px) { 
-	
-
+	.hero-container {
+	    height: 475px;
+	}
+	header .header-wrapper #menu-container ul.menu {
+	    height: auto; 
+	}
 }
 @media all and (max-width: 940px) { 
-
-
+	header .header-wrapper #menu-container ul.menu li {
+	    padding-bottom: 10px;
+	}
+	.mobile {
+	    padding:0;
+	}
 }
 
 @media all and (max-width: 768px) {
@@ -69,11 +95,18 @@
 }
 
 @media all and (max-width: 690px) {
-	
+	.hero-container {
+	    height: 350px;
+	}
+	.hero-container .image-wrapper {
+	    width: 25%;
+	}
 }
 
 @media all and (max-width: 480px) {
-
+	.hero-container .image-wrapper {
+	    width: 30%;
+	}
 
 }
 

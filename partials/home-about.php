@@ -14,6 +14,11 @@
 				<div class="about-content">
 					<?php the_field("about-content"); ?>
 				</div>
+
+				<?php $page_id = 10; ?>
+				<div class="button-wrapper">
+					<a class="button"  href="<?php echo get_permalink( $page_id ); ?>"> learn more</a>
+				</div>
 			</div>
 			
 		</div>

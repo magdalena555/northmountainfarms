@@ -29,6 +29,7 @@
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		    position:relative;
+		    justify-content:center;
 			h2{
 				color:  #61514e;
 				font-size: 56.61px;
@@ -38,7 +39,7 @@
 				margin:0;
 			}
 			h3{
-				font-family: BrandonGrotesque;
+				font-family: 'Cabin', sans-serif;
 				color:  #61514e;
 				font-size: 33.02px;
 				font-weight: 700;
@@ -54,14 +55,18 @@
 				text-align: center;
 				margin:0;
 			}
-			.button{
-				position:absolute;
-				bottom: -6%;
-				line-height: 314%;
-
-			}
+			
 		}
 	}
+}
+.product-box .button-wrapper{
+    bottom: -7%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 @media all and (max-width: 1500px) { 
 
@@ -87,8 +92,26 @@
 	
 }
 @media all and (max-width: 1024px) { 
-	
-
+	.products p {
+	    font-size: 18px;
+	}
+	.products .products-container {
+	    flex-direction: column;
+	}
+	.products .products-container .product-box {
+	    width:70%;
+	    margin:0 auto;
+	    margin-bottom:50px;
+	}
+	.products .products-container .product-box h2 {
+	    font-size: 40px;
+	    line-height: initial;
+	}
+	.products .products-container .product-box h3 {
+	    font-size: 23px;
+	    line-height: initial;
+	    padding-bottom:15px;
+	}
 }
 @media all and (max-width: 940px) { 
 
@@ -101,7 +124,9 @@
 }
 
 @media all and (max-width: 690px) {
-	
+	.products .products-container .product-box {
+	    width: 90%;
+	}
 }
 
 @media all and (max-width: 480px) {
